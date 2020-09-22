@@ -52,7 +52,7 @@ public class ContextMenuView extends ReactViewGroup implements PopupMenu.OnMenuI
 
         gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
-            public void onLongPress(MotionEvent e) {
+            public void onPress(MotionEvent e) {
                 contextMenu.show();
             }
         });
